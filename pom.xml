@@ -50,7 +50,6 @@
         </dependencies>
     </dependencyManagement>
 
-
     <!--插件-->
     <build>
         <plugins>
