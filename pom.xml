@@ -8,6 +8,9 @@
     <groupId>com.johnzero</groupId>
     <artifactId>online-education</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>bean</module>
+    </modules>
 
     <!---->
     <packaging>pom</packaging>

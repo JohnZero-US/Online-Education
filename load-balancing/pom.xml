@@ -11,22 +11,22 @@
 
     <!--项目信息-->
     <groupId>com.johnzero</groupId>
-    <artifactId>user-service</artifactId>
+    <artifactId>load-balancing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>user-service</name>
-    <description>User service.</description>
+    <name>load-balancing</name>
+    <description>Demo project for Spring Boot</description>
+
     <dependencies>
-
-
+        <!---->
         <dependency>
             <groupId>com.johnzero</groupId>
             <artifactId>bean</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <!---->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,6 +37,4 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>

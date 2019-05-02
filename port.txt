@@ -1,0 +1,7 @@
+user-service:8762 ~ 8772
+
+eureka-service:8761
+
+load-balancing:8800
+
+view:9080 ~ 9090

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/controller" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bean" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test1" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/load-balancing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-load-balancing" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/view" charset="UTF-8" />
   </component>
 </project>
