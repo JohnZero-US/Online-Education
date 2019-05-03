@@ -6,7 +6,6 @@
         <groupId>com.johnzero</groupId>
         <artifactId>online-education</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <!--项目信息-->
@@ -16,7 +15,7 @@
     <name>eureka-service</name>
     <description>Register Center.</description>
 
-
+    <!--依赖-->
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
