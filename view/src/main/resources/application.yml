@@ -1,3 +1,7 @@
+spring:
+  application:
+    name: view
+
 server:
   port: 9080
 
@@ -5,8 +9,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
-spring:
-  application:
-    name: view
-

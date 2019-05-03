@@ -16,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="controller" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="spring-boot-master" target="1.5" />
       <module name="test1" target="1.7" />
       <module name="user" target="1.8" />
       <module name="user-load-balancing" target="1.8" />
