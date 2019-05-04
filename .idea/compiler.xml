@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bean" />
-        <module name="config-client" />
         <module name="config-service" />
         <module name="eureka-service" />
         <module name="load-balancing" />
@@ -16,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-client" target="1.8" />
       <module name="controller" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="spring-boot-master" target="1.5" />
