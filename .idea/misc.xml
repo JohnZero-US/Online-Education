@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/load-balancing/pom.xml" />
         <option value="$PROJECT_DIR$/view/pom.xml" />
+        <option value="$PROJECT_DIR$/config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

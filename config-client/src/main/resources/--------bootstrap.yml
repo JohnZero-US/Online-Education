@@ -1,0 +1,9 @@
+server:
+  #port: 8887
+
+#可刷新应用程序入口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

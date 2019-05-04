@@ -1,7 +1,11 @@
-user-service:8770 ~ 8780
-
 eureka-service:8761
 
-load-balancing:8900
+config-service:8770 ~ 8775
 
-view:9080 ~ 9090
+config-client:8780
+
+user-service:9010 ~ 9015
+
+load-balancing:9000
+
+view:9080 ~ 9085
