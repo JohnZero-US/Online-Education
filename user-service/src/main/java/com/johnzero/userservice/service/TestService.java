@@ -25,4 +25,9 @@ public class TestService {
     public String home(@RequestParam(value = "name", defaultValue = "john_zero") String name) {
         return "hi " + name + " ,i am from port:" + port;
     }
+
+    @RequestMapping("/getPort")
+    public String getPort() {
+        return port;
+    }
 }
