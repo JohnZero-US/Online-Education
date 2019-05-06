@@ -1,0 +1,6 @@
+eureka:
+  client:
+    #registryFetchIntervalSeconds: 5
+  instance:
+    #leaseRenewalIntervalInSeconds: 10
+

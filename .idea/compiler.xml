@@ -11,7 +11,7 @@
         <module name="eureka-service" />
         <module name="gateway-service" />
         <module name="user-service" />
-        <module name="view" />
+        <module name="view-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +25,7 @@
       <module name="user-load-balancing" target="1.8" />
       <module name="user-service-cluster" target="1.8" />
       <module name="user-service-load-balanced" target="1.8" />
+      <module name="view" target="1.8" />
       <module name="zipkin-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -45,6 +46,7 @@
       <module name="user-service-cluster" options="-parameters" />
       <module name="user-service-load-balanced" options="-parameters" />
       <module name="view" options="-parameters" />
+      <module name="view-service" options="-parameters" />
       <module name="zipkin-service" options="-parameters" />
     </option>
   </component>

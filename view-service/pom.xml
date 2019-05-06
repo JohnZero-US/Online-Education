@@ -10,9 +10,9 @@
 
     <!--项目信息-->
     <groupId>com.johnzero</groupId>
-    <artifactId>view</artifactId>
+    <artifactId>view-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>view</name>
+    <name>view-service</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
@@ -41,7 +41,7 @@
             <optional>true</optional>
         </dependency>
 
-        <!--传动装置包(用于刷新远程配置)-->
+        <!--传动装置包-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
