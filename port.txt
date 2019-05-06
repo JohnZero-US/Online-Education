@@ -6,6 +6,6 @@ config-client:8780
 
 user-service:9010 ~ 9015
 
-load-balancing:9000
+user-service-load-balancing:9000
 
 view:9080 ~ 9085

@@ -3,10 +3,7 @@ package com.johnzero.view.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -41,14 +38,6 @@ public class TestController {
     @Autowired
     RestTemplate restTemplate;
 
-
-    @GetMapping("/greeting")
-    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name,
-                           Model model) {
-        model.addAttribute("name", name);
-        return "greeting";
-    }
-
     @GetMapping("/getMaxConnectAndMaxThread")
     public String getMaxConnectAndMaxThread() {
         return String.format("总连接数为：%s，总线程数为：%s", String.valueOf(maxConnections), String.valueOf(maxThreads));
@@ -56,15 +45,16 @@ public class TestController {
 
 
     /**
-     * 负载均衡测试
      *
      * @return
      */
     @GetMapping("/getPort")
     public String getPort() {
         //
-        String us_port = restTemplate.getForObject("http://USER-SERVICE/getPort", String.class);
+        String us_port = restTemplate.getForObject("http://USER-SERVICE-LOAD-BALANCED/getPort", String.class);
 
         return String.format("View Port:%s,User-Service port:%s", port, us_port);
     }
+
+
 }

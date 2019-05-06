@@ -9,7 +9,9 @@
         <module name="bean" />
         <module name="config-service" />
         <module name="eureka-service" />
+        <module name="gateway-service" />
         <module name="user-service" />
+        <module name="user-service-load-balanced" />
         <module name="view" />
       </profile>
     </annotationProcessing>
@@ -32,11 +34,13 @@
       <module name="controller" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="load-balancing" options="-parameters" />
       <module name="test1" options="-parameters" />
       <module name="user" options="-parameters" />
       <module name="user-load-balancing" options="-parameters" />
       <module name="user-service" options="-parameters" />
+      <module name="user-service-load-balanced" options="-parameters" />
       <module name="view" options="-parameters" />
     </option>
   </component>
