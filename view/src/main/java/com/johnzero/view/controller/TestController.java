@@ -1,8 +1,12 @@
 package com.johnzero.view.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -20,10 +24,6 @@ import org.springframework.web.client.RestTemplate;
 @RefreshScope
 @RestController
 public class TestController {
-    /**
-     * 刷新配置路径
-     * http://127.0.0.1:8780/actuator/bus-refresh
-     */
 
     @Value("${server.tomcat.max-connections}")
     private int maxConnections;
@@ -45,16 +45,19 @@ public class TestController {
 
 
     /**
-     *
      * @return
      */
     @GetMapping("/getPort")
+    @HystrixCommand(fallbackMethod = "getPortError")  //断路器发生调用方法
     public String getPort() {
         //
-        String us_port = restTemplate.getForObject("http://USER-SERVICE-LOAD-BALANCED/getPort", String.class);
+        String us_port = restTemplate.getForObject("http://USER-SERVICE/getPort", String.class);
 
         return String.format("View Port:%s,User-Service port:%s", port, us_port);
     }
 
+    public String getPortError() {
+        return "Get User-Service Error!!!";
+    }
 
 }

@@ -1,0 +1,7 @@
+
+#链路追踪
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:9411  #中心地址
+    sender:
+      type: web   #发送方式

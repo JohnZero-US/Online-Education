@@ -4,11 +4,14 @@ eureka-service:8761
 #远程配置服务
 config-service:8770
 
+#zuul路由网关
+gateway-service:9000
+
+#链路追踪服务
+zipkin-server:9411
+
 #用户服务
 user-service:9010 ~ 9015
-
-#用户服务的负载均衡入口
-user-service-cluster:9000
 
 # 前端视图 入口
 view:9080 ~ 9085
