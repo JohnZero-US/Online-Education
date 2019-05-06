@@ -11,7 +11,7 @@
         <module name="eureka-service" />
         <module name="gateway-service" />
         <module name="user-service" />
-        <module name="user-service-load-balanced" />
+        <module name="user-service-cluster" />
         <module name="view" />
       </profile>
     </annotationProcessing>
@@ -24,6 +24,7 @@
       <module name="test1" target="1.7" />
       <module name="user" target="1.8" />
       <module name="user-load-balancing" target="1.8" />
+      <module name="user-service-load-balanced" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -40,6 +41,7 @@
       <module name="user" options="-parameters" />
       <module name="user-load-balancing" options="-parameters" />
       <module name="user-service" options="-parameters" />
+      <module name="user-service-cluster" options="-parameters" />
       <module name="user-service-load-balanced" options="-parameters" />
       <module name="view" options="-parameters" />
     </option>

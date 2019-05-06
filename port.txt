@@ -1,11 +1,14 @@
+#服务发现/注册中心 入口
 eureka-service:8761
 
-config-service:8770 ~ 8775
+#远程配置服务
+config-service:8770
 
-config-client:8780
-
+#用户服务
 user-service:9010 ~ 9015
 
-user-service-load-balancing:9000
+#用户服务的负载均衡入口
+user-service-cluster:9000
 
+# 前端视图 入口
 view:9080 ~ 9085

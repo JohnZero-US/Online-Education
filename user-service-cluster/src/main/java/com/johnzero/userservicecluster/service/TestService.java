@@ -1,4 +1,4 @@
-package com.johnzero.userserviceloadbalanced.service;
+package com.johnzero.userservicecluster.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
