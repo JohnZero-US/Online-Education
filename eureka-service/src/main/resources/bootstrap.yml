@@ -1,3 +1,0 @@
-spring:
-  application:
-    name: eureka-server #应用程序名称
