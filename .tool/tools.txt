@@ -1,0 +1,10 @@
+#容器化部署工具
+1.Docker
+
+#ELK 栈
+#示例 https://howtodoinjava.com/microservices/elk-stack-tutorial-example/
+1.Elasticsearch 是一种基于JSON的分布式搜索和分析引擎，专为水平可扩展性，最高可靠性和易管理性而设计。
+
+2.Logstash 是一个动态数据收集管道，具有可扩展的插件生态系统和强大的Elasticsearch协同作用。
+
+3.Kibana 通过UI 提供数据可视化。

@@ -35,9 +35,10 @@
         </dependency>
 
         <!--管理服务-->
-        <dependency>
+        <!--<dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
+            <version>2.0.2</version>
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
@@ -46,7 +47,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
