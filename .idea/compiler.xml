@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="admin-service" />
         <module name="bean" />
         <module name="config-service" />
         <module name="eureka-service" />
@@ -19,6 +20,7 @@
       <module name="controller" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="load-balancing" target="1.8" />
+      <module name="spring-boot-2.1.4.RELEASE" target="1.5" />
       <module name="spring-boot-master" target="1.5" />
       <module name="test1" target="1.7" />
       <module name="user" target="1.8" />
@@ -31,6 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-service" options="-parameters" />
       <module name="bean" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-service" options="-parameters" />

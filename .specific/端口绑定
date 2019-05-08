@@ -4,6 +4,9 @@ eureka-service:8761
 #远程配置服务
 config-service:8770
 
+#Admin管理服务
+admin-service:8780
+
 #zuul路由网关
 gateway-service:9000
 

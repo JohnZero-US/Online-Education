@@ -1,0 +1,50 @@
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    health-check-url-path: /actuator/health
+#    metadata-map:
+#      startup: ${random.int}    #needed to trigger info and endpoint update after restart
+#  client:
+#    registryFetchIntervalSeconds: 5
+#    serviceUrl:
+#      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+
+# 在默认情况下大多数Actuator的端点并没有完全公开，这里我将所有端点都进行公开进行管理
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+spring:
+  # 配置SBA Client连接的安全账号密码
+  security:
+    user:
+      name: admin
+      password: admin
+  #客户端登陆的密码
+  boot:
+    admin:
+      client:
+        # 这个URL地址是SBA Server的服务地址，你需要将你的应用注册到该地址上
+        url: "http://127.0.0.1:8780"
+        # 配置连接到监测管理平台的Security安全密码
+        username: admin
+        password: admin
+        instance:
+          metadata:
+            # 配置发送到SBA Server的SBA Client的端点安全密码
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+
+
+# 官方文档中有提到， SpringBoot 的 Logging 配置的级别有7个：TRACE , DEBUG , INFO , WARN , ERROR , FATAL , OFF
+logging:
+  # 设置日志保存的路径，path和file只需要设置一个，指定path则日志名称固定为spring.log
+  file: .logs/admin-service.log
+  # 打印日志的级别
+  level:
+    root: info

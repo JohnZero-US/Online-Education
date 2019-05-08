@@ -5,3 +5,27 @@ spring:
     base-url: http://127.0.0.1:9411  #中心地址
     sender:
       type: web   #发送方式
+  #客户端登陆的密码
+  boot:
+    admin:
+      client:
+        # 这个URL地址是SBA Server的服务地址，你需要将你的应用注册到该地址上
+        url: "http://127.0.0.1:8780"
+        # 配置连接到监测管理平台的Security安全密码
+        username: admin
+        password: admin
+        instance:
+          metadata:
+            # 配置发送到SBA Server的SBA Client的端点安全密码
+            user.name: ${spring.security.user.name}
+            user.password: ${spring.security.user.password}
+
+#管理结束点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
