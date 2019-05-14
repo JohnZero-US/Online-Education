@@ -1,3 +1,6 @@
+#Zookeeper 注册中心1
+Zookeeper:2181
+
 #服务发现/注册中心 入口
 eureka-service:8761
 
@@ -17,4 +20,7 @@ zipkin-server:9411
 user-service:9010 ~ 9015
 
 # 前端视图 入口
-view:9080 ~ 9085
+view-service:9080 ~ 9085
+
+#Kafka消息队列中间件
+Kafka:9092

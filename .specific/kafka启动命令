@@ -1,0 +1,8 @@
+#Windows
+#启动动物管理员 注册中心
+1.cd /d F:\Server\kafka_2.11-2.2.0
+2.bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+#启动Kafka服务
+1.cd /d F:\Server\kafka_2.11-2.2.0
+2.bin\windows\kafka-server-start.bat config\server.properties

@@ -3,12 +3,12 @@ zuul:
   routes:
     #视图
     view:
-      path: /view/**             #路由路径
-      service-id: view          #指向的服务id
+      path: /VIEW-SERVICE/**             #路由路径
+      service-id: VIEW-SERVICE          #指向的服务id
     #用户服务
     user-service:
-      path: /user-service/**             #路由路径
-      service-id: user-service          #指向的服务id
+      path: /USER-SERVICE/**             #路由路径
+      service-id: USER-SERVICE          #指向的服务id
 
 
 #链路追踪
