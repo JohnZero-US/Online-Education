@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="admin-service" />
-        <module name="bean" />
+        <module name="gateway-service" />
+        <module name="view-service" />
         <module name="config-service" />
         <module name="eureka-service" />
-        <module name="gateway-service" />
         <module name="user-service" />
-        <module name="view-service" />
+        <module name="bean" />
+        <module name="admin-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -1,7 +1,8 @@
 package com.johnzero.userservice.service;
 
 
-import com.johnzero.bean.Customer;
+import com.johnzero.bean.microservice.user.Customer;
+import com.johnzero.bean.microservice.user.User;
 import com.johnzero.userservice.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -23,10 +24,13 @@ public class CustomerService implements CommandLineRunner {
     @Autowired
     private CustomerRepository repository;
 
+    @Autowired
+    private UserService userService;
+
     @Override
     public void run(String... args) throws Exception {
 
-       /* repository.deleteAll();
+      /*  repository.deleteAll();
 
         // save a couple of customers
         repository.save(new Customer("Alice", "Smith", 25));
@@ -54,6 +58,7 @@ public class CustomerService implements CommandLineRunner {
         System.out.println("Customer found with findByAge(25):");
         System.out.println("--------------------------------");
         System.out.println(repository.findByAge(25));*/
+
 
 
     }

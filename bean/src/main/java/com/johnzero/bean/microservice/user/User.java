@@ -1,4 +1,4 @@
-package com.johnzero.bean.userservice;
+package com.johnzero.bean.microservice.user;
 
 import java.io.Serializable;
 

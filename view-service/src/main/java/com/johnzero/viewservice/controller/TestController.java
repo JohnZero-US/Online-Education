@@ -57,4 +57,16 @@ public class TestController {
         return "Get User-Service Error!!!";
     }
 
+
+    /**
+     * @return
+     */
+    @GetMapping("/getPort2")
+    public String getPort2() {
+        //
+        String us_port = restTemplate.getForObject("http://127.0.0.1:12000/getPort", String.class);
+
+        return String.format("View Port:%s,User-Service port:%s", port, us_port);
+    }
+
 }

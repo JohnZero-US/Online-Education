@@ -1,6 +1,7 @@
 package com.johnzero.userservice;
 
 import brave.sampler.Sampler;
+import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -8,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+import java.util.Properties;
 
 @SpringBootApplication
 @EnableEurekaClient
@@ -26,6 +29,8 @@ public class UserServiceApplication {
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
     }
+
+
 
     /**
      * 允许Spring Admin访问所有路径

@@ -1,4 +1,4 @@
-package com.johnzero.bean;
+package com.johnzero.bean.microservice.user;
 
 import org.springframework.data.annotation.Id;
 

@@ -1,6 +1,6 @@
 package com.johnzero.userservice.repository;
 
-import com.johnzero.bean.Customer;
+import com.johnzero.bean.microservice.user.Customer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;
